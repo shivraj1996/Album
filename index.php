@@ -1,6 +1,6 @@
 <?php
 include 'view/header.php';
-if(isset($_SESSION['pass']))
+if(isset($_SESSION['email']))
 {
     header("location:View/main.php");
 }
