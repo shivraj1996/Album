@@ -39,7 +39,7 @@ elseif(isset($_SESSION['email']) && isset($_SESSION['isPremium']) && $_SESSION['
   <font class="font-italic font-weight-bold"><h1 class="display-4">My Album</h1></font>
   <p class="lead">There are two type of albums. One is Normal Album for Normal Users and Other is Premium album for Premium Users.</p>
   <hr class="my-4">
-  <p>Many type of ablum like Temple Album, Robotic Album, Flower Album, House Album.</p>
+  <p>Many type of ablum like Temple Album, Robotic Album, Flower Album, House Albums.</p>
   
 </div>
 </div>
