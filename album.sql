@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 17, 2022 at 06:44 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Generation Time: Oct 21, 2022 at 05:12 AM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,10 +41,10 @@ CREATE TABLE `album` (
 --
 
 INSERT INTO `album` (`id`, `albumimage`, `Title`, `Description`, `isPremium`, `isPublish`) VALUES
-(12, 'car.jpg', 'Car Album', 'This is 2022 latest Car Album.', 1, 1),
-(13, 'bike.jpg', 'Bike Album', 'This is Bike album', 0, 1),
-(18, 'city44.jpg', 'City Album', 'Most Famous City are in this album.', 0, 0),
-(19, 'ani44.jpg', 'Animal Album', 'Most famous animal are in this album.', 1, 0);
+(12, 'tyt.jpg', 'Temple Album', 'This album represents the historical temples.', 1, 1),
+(13, 'ehe.jpg', 'Robotic Album', 'This album represents about science and technology.', 1, 1),
+(18, '1238422.jpg', 'Flower Album', 'This album is about the beautiful flowers that are found around us.', 0, 1),
+(19, 'shd.jpg', 'House Album', 'This album is about the different types of houses based on geography.', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -63,19 +63,23 @@ CREATE TABLE `photos` (
 --
 
 INSERT INTO `photos` (`id`, `name`, `albumid`) VALUES
-(21, 'bike11.jpg', 13),
-(22, 'bike22.jpg', 13),
-(23, 'bik33.jpg', 13),
-(24, 'city11.jpg', 18),
-(25, 'city22.jpg', 18),
-(26, 'city33.jpg', 18),
-(27, 'car11.jpg', 12),
-(28, 'car22.jpg', 12),
-(29, 'car33.jpg', 12),
-(30, 'ani11.jpg', 19),
-(31, 'ani22.jpg', 19),
-(32, 'ani44.jpg', 19),
-(34, 'ani33.jpg', 19);
+(35, '1238422.jpg', 18),
+(36, '132836.jpg', 18),
+(37, '1178188.jpg', 18),
+(38, '6545009.jpg', 18),
+(39, '432024.jpg', 18),
+(46, 'swh.jpg', 19),
+(47, 'shs.jpg', 19),
+(48, 'shd.jpg', 19),
+(49, 'shj.jpg', 19),
+(50, 'hss.jpg', 12),
+(51, 'iyg.jfif', 12),
+(52, 'uty.jfif', 12),
+(53, 'hgh.jpg', 12),
+(54, 'tyt.jpg', 12),
+(55, 'wjw.jpg', 13),
+(57, 'ehg.jpg', 13),
+(58, 'sgg.png', 13);
 
 -- --------------------------------------------------------
 
@@ -97,8 +101,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `Name`, `Email`, `password`, `isPremium`) VALUES
 (1, 'admin', 'admin@gmail.com', 'admin123', 2),
-(2, 'bishal', 'bishal@gmail.com', 'bishal123', 1),
-(3, 'ajeet', 'milan@gmail.com', 'milan123', 0);
+(2, 'pawan', 'pawan@gmail.com', 'pawan123', 1),
+(3, 'shivraj', 'shivraj@gmail.com', 'shiv123', 0);
 
 --
 -- Indexes for dumped tables
@@ -131,13 +135,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `album`
 --
 ALTER TABLE `album`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `user`
